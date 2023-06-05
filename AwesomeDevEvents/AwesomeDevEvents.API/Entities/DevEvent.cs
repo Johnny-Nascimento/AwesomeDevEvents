@@ -4,7 +4,7 @@
     {
         public DevEvent()
         {
-            Speakers = new List<DevEventsSpeaker>();
+            Speakers = new List<DevEventSpeaker>();
             IsDeleted = false;
         }
 
@@ -13,7 +13,7 @@
         public string? Description { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
-        public List<DevEventsSpeaker> Speakers { get; set; }
+        public List<DevEventSpeaker> Speakers { get; set; }
         public bool IsDeleted { get; set; }
 
         public void Update(string? title, string? description, DateTime startDate, DateTime endDate)
